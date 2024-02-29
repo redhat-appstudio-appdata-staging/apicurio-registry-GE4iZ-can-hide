@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: python-sdk-apicurio-registry
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/sbudhwar-1-tenant/apicurio-registry/python-sdk-apicurio-registry@sha256:ac482aad702c3bfd4830c9b6dfd8ccb88b7920b2c1e04ca51205e3920965ec58
+        name: my-python
+        resources: {}
+status: {}
